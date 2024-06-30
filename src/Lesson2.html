@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=“stylesheet” type=“text/css” href=“style.css” />
+    <meta charset="UTF-8">
+    <title>FORM</title>
+</head>
+<body>
+<h2>Анкета участника</h2>
+<form action="/handler.php" method="post">
+    <div>
+        <p><label for="text">Имя </label><Br>
+            <input type="text" id="text" name="clientName"/><Br>
+            <label for="clientSurname">Фамилия</label><Br>
+            <input type="text" id="clientSurname" name="clientSurname"/></p>
+    </div>
+    <div>
+        <p><label>Пол </label><br>
+            <input checked="checked" type="radio" name="gender" value="gender1">Мужчина<Br>
+            <input type="radio" name="gender" value="gender2">Женщина<Br>
+            <input type="radio" name="gender" value="gender3">Оно</p>
+    </div>
+    <div>
+        <p><label>Интересы</label><br>
+            <input type="checkbox" name="interest" value="interest1">Спорт<Br>
+            <input type="checkbox" name="interest" value="interest2">Искусство<Br>
+            <input type="checkbox" name="interest" value="interest3">Наука<Br>
+            <input type="checkbox" name="interest" value="interest3">Образование<Br>
+            <input type="checkbox" name="interest" value="interest3">Бизнес<Br>
+            <input type="checkbox" name="interest" value="interest3">Ничего не интересует<Br></p>
+    </div>
+    <div>
+        <p><label for="color1">Ваш любимый цвет</label><br>
+            <select name="colors1" id="color1">
+                <option value="">Выберите цвет</option>
+                <option value="no color">Нет любимого цвета</option>
+                <option value="red">Красный</option>
+                <option value="orange ">Оранжевый</option>
+                <option value="yellow">Желтый</option>
+                <option value="green">Зелёный</option>
+                <option value="blue ">Голубой</option>
+                <option value="blue2 ">Синий</option>
+                <option value="purple">Фиолетовый</option>
+            </select></p>
+        <p><label for="color2">Когда сложно выбрать олин цвет</label><br>
+            <select size="3" name="colors2" id="color2" multiple="multiple">
+                <option value="no color">Пропустить</option>
+                <option value="red">Красный</option>
+                <option value="orange ">Оранжевый</option>
+                <option value="yellow">Желтый</option>
+                <option value="green">Зелёный</option>
+                <option value="blue ">Голубой</option>
+                <option value="blue2 ">Синий</option>
+                <option value="purple">Фиолетовый</option>
+            </select></p>
+    </div>
+    <p><label>Расскажите о себе в двух словах </label><br>
+           <textarea name="text"></textarea></p>
+            <p><input type="submit" value="Отправить"></p>
+    <a href="http://localhost:63342/Lesson2/Lesson2(2).html?_ijt=5o2jmj435t8ncggugt5m8tq1k0&_ij_reload=RELOAD_ON_SAVE">Перейди если стало скучно</a>
+</form>
+</body>
+</html>
